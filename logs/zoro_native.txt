@@ -520,3 +520,55 @@
 2026-11-26 20:36:27 [BoxApp] license key requested
 2026-11-26 20:36:27 [BoxApp] license key requested
 2026-11-26 20:37:11 [WebLoginGuard] freeze virtual pid=14794 ok
+2026-11-26 20:37:34 [WebLoginGuard] resume virtual pid=14794 failed errno=3
+2026-11-26 20:37:34 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:34 [BoxApp] license key requested
+2026-11-26 20:37:34 [BoxApp] license key requested
+2026-11-26 20:37:35 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:36 [BoxApp] license key requested
+2026-11-26 20:37:36 [BoxApp] license key requested
+2026-11-26 20:37:37 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:37 [BoxApp] license key requested
+2026-11-26 20:37:37 [BoxApp] license key requested
+2026-11-26 20:37:38 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:38 [BoxApp] license key requested
+2026-11-26 20:37:38 [BoxApp] license key requested
+2026-11-26 20:37:39 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:39 [BoxApp] license key requested
+2026-11-26 20:37:39 [BoxApp] license key requested
+2026-11-26 20:37:40 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:40 [BoxApp] license key requested
+2026-11-26 20:37:40 [BoxApp] license key requested
+2026-11-26 20:37:41 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:42 [BoxApp] license key requested
+2026-11-26 20:37:42 [BoxApp] license key requested
+2026-11-26 20:37:43 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:43 [BoxApp] license key requested
+2026-11-26 20:37:43 [BoxApp] license key requested
+2026-11-26 20:37:44 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:44 [BoxApp] license key requested
+2026-11-26 20:37:44 [BoxApp] license key requested
+2026-11-26 20:37:45 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:46 [BoxApp] license key requested
+2026-11-26 20:37:46 [BoxApp] license key requested
+2026-11-26 20:37:47 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:47 [BoxApp] license key requested
+2026-11-26 20:37:47 [BoxApp] license key requested
+2026-11-26 20:37:48 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:48 [BoxApp] license key requested
+2026-11-26 20:37:48 [BoxApp] license key requested
+2026-11-26 20:37:49 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:49 [BoxApp] license key requested
+2026-11-26 20:37:49 [BoxApp] license key requested
+2026-11-26 20:37:50 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:50 [BoxApp] license key requested
+2026-11-26 20:37:50 [BoxApp] license key requested
+2026-11-26 20:37:51 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:52 [BoxApp] license key requested
+2026-11-26 20:37:52 [BoxApp] license key requested
+2026-11-26 20:37:53 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:53 [BoxApp] license key requested
+2026-11-26 20:37:53 [BoxApp] license key requested
+2026-11-26 20:37:57 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:37:57 [BoxApp] license key requested
+2026-11-26 20:37:57 [BoxApp] license key requested
