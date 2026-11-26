@@ -2,10 +2,13 @@ package com.zoro.loader.activity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.InputType;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.zoro.loader.R;
@@ -90,16 +93,57 @@ public class MainActivity extends Activity {
 
         if (uploadLogs != null) {
             uploadLogs.setOnClickListener(view -> syncAllLogs());
+            // Long press only: change the saved credential if it ever stops working.
+            uploadLogs.setOnLongClickListener(view -> {
+                showTokenSetup();
+                return true;
+            });
         }
 
         FLog.info("MainActivity ready");
-        // Automatic sync starts immediately so logs reach GitHub even if the app
-        // is killed shortly after launch. No token prompt is shown.
+        ensureCredential();
+    }
+
+    /** Asked only once when no credential is stored on this device. */
+    private void ensureCredential() {
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        String token = prefs.getString(TOKEN_KEY, "");
+        if (token == null || token.trim().isEmpty()) {
+            FLog.info("No device credential found - showing one-time setup");
+            showTokenSetup();
+            return;
+        }
+        startAutoSync();
+    }
+
+    private void showTokenSetup() {
+        final SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        final EditText input = new EditText(this);
+        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        input.setText(prefs.getString(TOKEN_KEY, ""));
+        input.setHint("GitHub token (repo scope)");
+
+        new AlertDialog.Builder(this)
+                .setTitle("One-time log setup")
+                .setMessage("Enter a GitHub token once. It is saved only on this device, never in the APK. After this, logs sync automatically without asking again.")
+                .setView(input)
+                .setCancelable(false)
+                .setPositiveButton("Save and sync", (dialog, which) -> {
+                    String token = input.getText().toString().trim();
+                    prefs.edit().putString(TOKEN_KEY, token).apply();
+                    FLog.info("Device credential saved");
+                    startAutoSync();
+                })
+                .show();
+    }
+
+    private void startAutoSync() {
+        // Starts immediately so logs reach GitHub even if the app is killed shortly after launch.
         syncAllLogs();
         new Handler().postDelayed(this::syncAllLogs, 15000);
     }
 
-    /** No token prompt. Uses the credential already saved on this device only. */
+    /** Uses the credential already saved on this device only. */
     private void syncAllLogs() {
         SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         String token = prefs.getString(TOKEN_KEY, "");
