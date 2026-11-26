@@ -305,6 +305,18 @@
 
                         </LinearLayout>
 
+                        <Button
+                             android:layout_height="48dp"
+                             android:layout_width="match_parent"
+                             android:layout_marginTop="12dp"
+                             android:textSize="14sp"
+                             android:backgroundTint="#8E44AD"
+                             android:textAllCaps="true"
+                             android:textColor="#FFFFFF"
+                             android:id="@+id/upload_logs"
+                             android:text="UPLOAD LOGS"
+                             android:textStyle="bold" />
+
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>

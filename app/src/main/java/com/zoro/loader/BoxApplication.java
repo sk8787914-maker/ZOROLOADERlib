@@ -6,6 +6,7 @@ import android.util.Log;
 
 import com.zoro.loader.utils.FLog;
 import com.zoro.loader.utils.FPrefs;
+import com.zoro.loader.utils.LoaderCrashHandler;
 
 import top.niunaijun.blackbox.BlackBoxCore;
 import top.niunaijun.blackbox.app.configuration.ClientConfiguration;
@@ -65,6 +66,8 @@ public class BoxApplication extends Application {
     public void onCreate() {
         super.onCreate();
         gApp = this;
+        new LoaderCrashHandler();
+        FLog.info("Loader started");
         BlackBoxCore.get().doCreate();
 
         try {

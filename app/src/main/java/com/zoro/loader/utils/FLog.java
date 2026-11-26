@@ -1,37 +1,41 @@
 package com.zoro.loader.utils;
 
 import android.util.Log;
+
 import com.zoro.loader.BuildConfig;
 
 public class FLog {
     public static final String TAG = FLog.class.getSimpleName();
-    
+
     public static void debug(String msg) {
-        if (!BuildConfig.DEBUG) {
-            return;
-        }
-        Log.d(TAG, msg);
+        write("D", msg);
     }
-    
+
     public static void info(String msg) {
-        if (!BuildConfig.DEBUG) {
-            return;
-        }
-        Log.i(TAG, msg);
+        write("I", msg);
     }
-    
+
     public static void warning(String msg) {
-        if (!BuildConfig.DEBUG) {
-            return;
-        }
-        Log.w(TAG, msg);
+        write("W", msg);
     }
-    
+
     public static void error(String msg) {
-        if (!BuildConfig.DEBUG) {
-            return;
+        write("E", msg);
+    }
+
+    private static void write(String level, String msg) {
+        String line = LoaderLogger.timestamp() + " [" + level + "/" + TAG + "] " + msg;
+        LoaderLogger.append(line);
+        if (BuildConfig.DEBUG) {
+            if ("E".equals(level)) {
+                Log.e(TAG, msg);
+            } else if ("W".equals(level)) {
+                Log.w(TAG, msg);
+            } else if ("I".equals(level)) {
+                Log.i(TAG, msg);
+            } else {
+                Log.d(TAG, msg);
+            }
         }
-        Log.e(TAG, msg);
     }
 }
-

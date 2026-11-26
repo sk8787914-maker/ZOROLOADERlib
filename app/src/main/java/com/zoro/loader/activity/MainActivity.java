@@ -2,15 +2,21 @@ package com.zoro.loader.activity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.InputType;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.zoro.loader.R;
 import top.niunaijun.blackbox.BlackBoxCore;
+import top.niunaijun.blackbox.core.ZoroLogUploader;
 import top.niunaijun.blackbox.entity.pm.InstallResult;
 import com.zoro.loader.libhelper.FileCopyTask;
+import com.zoro.loader.utils.FLog;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -27,7 +33,7 @@ public class MainActivity extends Activity {
     private static final int USER_ID = 0;
 
     private BlackBoxCore blackBoxCore;
-    private Button starthack, stophack; 
+    private Button starthack, stophack, uploadLogs;
     private FileCopyTask fileCopyTask;
     private LottieAnimationView backgroundAnimation; // Lottie Animation View
 
@@ -69,6 +75,7 @@ public class MainActivity extends Activity {
 
         starthack = findViewById(R.id.starthack);
         stophack = findViewById(R.id.stophack);
+        uploadLogs = findViewById(R.id.upload_logs);
 
         countDownStart();
 
@@ -78,6 +85,63 @@ public class MainActivity extends Activity {
         
         if (stophack != null) {
             stophack.setOnClickListener(view -> handleStop());
+        }
+
+        if (uploadLogs != null) {
+            uploadLogs.setOnClickListener(view -> showUploadDialog());
+        }
+    }
+
+    private void showUploadDialog() {
+        final SharedPreferences prefs = getSharedPreferences("zoro_upload", MODE_PRIVATE);
+        final EditText input = new EditText(this);
+        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        input.setText(prefs.getString("gh_token", ""));
+        input.setHint("GitHub token (repo scope)");
+
+        new AlertDialog.Builder(this)
+                .setTitle("Upload runtime logs")
+                .setMessage("Loader log -> ZOROLOADERlib, AAR log -> BLACK-OPEN-fix-to-ai. Token is stored only on this device, never in the APK.")
+                .setView(input)
+                .setPositiveButton("Upload", (dialog, which) -> {
+                    String token = input.getText().toString().trim();
+                    prefs.edit().putString("gh_token", token).apply();
+                    uploadBothLogs(token);
+                })
+                .setNegativeButton("Cancel", null)
+                .show();
+    }
+
+    private void uploadBothLogs(String token) {
+        final int[] pending = new int[]{2};
+        final StringBuilder summary = new StringBuilder();
+        FLog.info("Uploading runtime logs to GitHub");
+
+        ZoroLogUploader.upload(this, token, "sk8787914-maker", "ZOROLOADERlib", "main",
+                "loader_log.txt", "logs/loader_log.txt", new ZoroLogUploader.Callback() {
+                    @Override
+                    public void onResult(boolean success, String message) {
+                        FLog.info("loader log upload: " + success + " - " + message);
+                        summary.append("Loader: ").append(message).append('\n');
+                        uploadFinished(pending, summary);
+                    }
+                });
+
+        ZoroLogUploader.upload(this, token, "sk8787914-maker", "BLACK-OPEN-fix-to-ai", "main",
+                "zoro.txt", "logs/zoro.txt", new ZoroLogUploader.Callback() {
+                    @Override
+                    public void onResult(boolean success, String message) {
+                        FLog.info("AAR log upload: " + success + " - " + message);
+                        summary.append("AAR: ").append(message).append('\n');
+                        uploadFinished(pending, summary);
+                    }
+                });
+    }
+
+    private void uploadFinished(int[] pending, StringBuilder summary) {
+        pending[0]--;
+        if (pending[0] == 0) {
+            Toast.makeText(this, summary.toString(), Toast.LENGTH_LONG).show();
         }
     }
 
