@@ -589,3 +589,4 @@
 2026-11-26 21:06:12 [JNI_OnLoad] libMCoreEsp loaded v16 (com.google, no process freeze)
 2026-11-26 21:06:12 [BoxApp] license key requested
 2026-11-26 21:06:12 [BoxApp] license key requested
+2026-11-26 21:07:00 [JNI_OnLoad] libMCoreEsp loaded v16 (com.google, no process freeze)
