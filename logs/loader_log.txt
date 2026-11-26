@@ -670,3 +670,5 @@
 2026-11-26 16:14:40.259 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
 2026-11-26 16:14:44.143 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
 2026-11-26 16:14:47.388 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:14:49.493 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 16:15:32.139 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
