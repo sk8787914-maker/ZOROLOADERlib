@@ -23,6 +23,28 @@ public class BoxApplication extends Application {
         return gApp;
     }
 
+    private static boolean isLoginWebProcess(Context context) {
+        try {
+            int pid = android.os.Process.myPid();
+            android.app.ActivityManager am = (android.app.ActivityManager)
+                    context.getSystemService(Context.ACTIVITY_SERVICE);
+            if (am != null) {
+                java.util.List<android.app.ActivityManager.RunningAppProcessInfo> list =
+                        am.getRunningAppProcesses();
+                if (list != null) {
+                    for (android.app.ActivityManager.RunningAppProcessInfo info : list) {
+                        if (info != null && info.pid == pid && info.processName != null) {
+                            return info.processName.endsWith(":login_web");
+                        }
+                    }
+                }
+            }
+        } catch (Throwable ignored) {
+            // If the process name cannot be read, keep the normal loader path.
+        }
+        return false;
+    }
+
     static {
         try {
             // 🔥 Library load ho rahi hai
@@ -39,6 +61,14 @@ public class BoxApplication extends Application {
         // Install before any BlackBox/native work so early Java failures are caught too.
         new LoaderCrashHandler(base);
         FLog.info("STEP attachBaseContext start");
+        // The isolated login WebView must be a plain Android process. BlackBox's
+        // ActivityManager/PackageManager hooks break Chromium's renderer child
+        // process ("ChildProcessConnection.start failed, trying again"), so the
+        // login page never renders. Skip all virtualisation in :login_web.
+        if (isLoginWebProcess(base)) {
+            FLog.info("login_web process: BlackBox hooks skipped");
+            return;
+        }
         try {
             BlackBoxCore.get().doAttachBaseContext(base, new ClientConfiguration() {
                 // @Override HATAYA - ab compiler error nahi dega
@@ -72,6 +102,10 @@ public class BoxApplication extends Application {
     public void onCreate() {
         super.onCreate();
         gApp = this;
+        if (isLoginWebProcess(this)) {
+            FLog.info("login_web process ready without BlackBox hooks");
+            return;
+        }
         FLog.info("Loader started");
         BlackBoxCore.get().doCreate();
 
