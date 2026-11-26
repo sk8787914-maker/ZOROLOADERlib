@@ -624,3 +624,6 @@
 2026-11-26 21:33:31 [JNI_OnLoad] libMCoreEsp loaded v17 (com.google, shared pending result)
 2026-11-26 21:33:31 [BoxApp] license key requested
 2026-11-26 21:33:31 [BoxApp] license key requested
+2026-11-26 21:48:38 [JNI_OnLoad] libMCoreEsp loaded v18 (com.google, listener replay + relaunch)
+2026-11-26 21:48:38 [BoxApp] license key requested
+2026-11-26 21:48:38 [BoxApp] license key requested
