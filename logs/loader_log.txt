@@ -1002,3 +1002,33 @@
 2026-11-26 17:12:34.086 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
 2026-11-26 17:12:37.698 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
 2026-11-26 17:12:41.059 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:12:44.303 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 17:12:47.318 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:12:50.715 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:12:52.476 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 17:50:20.013 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 17:50:20.017 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 17:50:20.020 [I/FLog] STEP attachBaseContext start
+2026-11-26 17:50:20.065 [I/FLog] STEP attachBaseContext done
+2026-11-26 17:50:20.099 [I/FLog] Loader started
+2026-11-26 17:50:20.111 [I/FLog] STEP license native check start
+2026-11-26 17:50:20.117 [I/FLog] STEP license native check done
+2026-11-26 17:50:20.120 [I/FLog] STEP SDK activation done
+2026-11-26 17:50:20.132 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-26 17:50:24.491 [I/FLog] STEP sign-in button pressed
+2026-11-26 17:50:24.529 [I/FLog] STEP native license Check start
+2026-11-26 17:50:25.539 [I/FLog] STEP native license Check returned: OK
+2026-11-26 17:50:25.570 [I/FLog] STEP login success, opening MainActivity
+2026-11-26 17:50:25.700 [I/FLog] MainActivity ready
+2026-11-26 17:50:25.704 [I/FLog] No device credential found - showing one-time setup
+2026-11-26 17:50:37.547 [I/FLog] Device credential saved
+2026-11-26 17:50:37.551 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
+2026-11-26 17:50:38.708 [I/FLog] STEP start button pressed
+2026-11-26 17:50:38.715 [I/FLog] STEP install game in container start
+2026-11-26 17:50:38.864 [I/FLog] STEP install game success
+2026-11-26 17:50:38.869 [I/FLog] STEP OBB copy start
+2026-11-26 17:50:38.879 [I/FLog] STEP OBB copy result: true
+2026-11-26 17:50:38.882 [I/FLog] STEP launching game process
+2026-11-26 17:50:39.461 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 17:50:39.475 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 17:50:39.481 [I/FLog] STEP attachBaseContext start
