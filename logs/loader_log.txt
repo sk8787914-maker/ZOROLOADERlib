@@ -2256,3 +2256,6 @@
 2026-11-26 21:03:34.937 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
 2026-11-26 21:03:39.695 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
 2026-11-26 21:03:43.578 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 21:03:46.767 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 21:03:51.099 [I/FLog] Login log sync: true - Uploaded logs/zoro_login.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 21:04:26.124 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
