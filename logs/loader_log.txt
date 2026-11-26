@@ -448,3 +448,34 @@
 2026-11-26 15:40:40.731 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
 2026-11-26 15:40:42.764 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
 2026-11-26 15:40:45.328 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 15:40:48.182 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 15:40:50.532 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 15:40:53.927 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 15:40:55.231 [I/FLog] Tombstone log sync: false - Software caused connection abort
+2026-11-26 15:41:50.231 [I/FLog] Detect log sync: false - Failed to connect to api.github.com/20.207.73.85:443
+2026-11-26 15:41:50.243 [I/FLog] Native log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 15:41:50.277 [I/FLog] AAR log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 15:43:02.132 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
+2026-11-26 15:43:02.498 [I/FLog] APK log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 15:43:02.745 [I/FLog] Crash log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 15:43:02.754 [I/FLog] Detect log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 15:43:02.768 [I/FLog] Native log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 15:43:03.071 [I/FLog] AAR log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 15:43:03.086 [I/FLog] Tombstone log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 16:01:53.641 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 16:01:53.646 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 16:01:53.649 [I/FLog] STEP attachBaseContext start
+2026-11-26 16:01:53.672 [I/FLog] STEP attachBaseContext done
+2026-11-26 16:01:53.703 [I/FLog] Loader started
+2026-11-26 16:01:53.716 [I/FLog] STEP license native check start
+2026-11-26 16:01:53.719 [I/FLog] STEP license native check done
+2026-11-26 16:01:53.726 [I/FLog] STEP SDK activation done
+2026-11-26 16:01:53.739 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-26 16:01:59.600 [I/FLog] STEP sign-in button pressed
+2026-11-26 16:01:59.640 [I/FLog] STEP native license Check start
+2026-11-26 16:02:01.205 [I/FLog] STEP native license Check returned: OK
+2026-11-26 16:02:01.240 [I/FLog] STEP login success, opening MainActivity
+2026-11-26 16:02:01.418 [I/FLog] MainActivity ready
+2026-11-26 16:02:01.424 [I/FLog] No device credential found - showing one-time setup
+2026-11-26 16:02:21.994 [I/FLog] Device credential saved
+2026-11-26 16:02:21.997 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
