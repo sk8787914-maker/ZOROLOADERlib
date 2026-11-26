@@ -1,4 +1,4 @@
-package com.zoro.loader.utils;
+package com.google.utils;
 
 import android.app.Activity;
 import android.app.Service;

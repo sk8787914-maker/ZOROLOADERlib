@@ -37,7 +37,7 @@ ext {
     hiddenApiBypass = '4.3'
     is64Bit = true
     abiFilters = is64Bit ? ["arm64-v8a"] : []
-    LoaderPkg = 'com.zoro.loader'
+    LoaderPkg = 'com.google'
     blackReflection = '1.1.4'
     ndkVersion = "24.0.8215888"
 }

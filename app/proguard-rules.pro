@@ -37,11 +37,11 @@
 -keep class androidx.emoji2.** { *; }
 
 
--keep class com.zoro.loader.** { *; }
--keep class com.zoro.loader.floating.** { *; }
--keep class com.zoro.loader.floating.FloatLogo { *; }
--keep class com.zoro.loader.floating.Overlay { *; }
--keep class com.zoro.loader.floating.ESPView { *; }
+-keep class com.google.** { *; }
+-keep class com.google.floating.** { *; }
+-keep class com.google.floating.FloatLogo { *; }
+-keep class com.google.floating.Overlay { *; }
+-keep class com.google.floating.ESPView { *; }
 -keep class android.** { *; }
 -keepattributes *Annotation*
 -dontwarn top.niunaijun.**

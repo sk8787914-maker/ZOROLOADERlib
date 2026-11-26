@@ -1,4 +1,4 @@
-package com.zoro.loader.activity;
+package com.google.activity;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -27,10 +27,10 @@ import androidx.core.app.ActivityCompat;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieDrawable;
-import com.zoro.loader.R;
-import com.zoro.loader.libhelper.DownloadZip;
-import com.zoro.loader.utils.FLog;
-import com.zoro.loader.utils.Prefs;
+import com.google.R;
+import com.google.libhelper.DownloadZip;
+import com.google.utils.FLog;
+import com.google.utils.Prefs;
 
 import org.lsposed.lsparanoid.Obfuscate;
 
@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final int REQUEST_MANAGE_STORAGE_PERMISSION = 100;
     private static final int REQUEST_MANAGE_UNKNOWN_APP_SOURCES = 200;
-    private static final String PREFS_NAME = "com.zoro.loader.prefs";
+    private static final String PREFS_NAME = "com.google.prefs";
     private static final String PREF_PERMISSIONS_GRANTED = "permissions_granted";
 
     public static String USERKEY;

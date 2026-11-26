@@ -1,8 +1,8 @@
-package com.zoro.loader.utils;
+package com.google.utils;
 
 import android.util.Log;
 
-import com.zoro.loader.BuildConfig;
+import com.google.BuildConfig;
 
 public class FLog {
     public static final String TAG = FLog.class.getSimpleName();

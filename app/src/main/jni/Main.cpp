@@ -36,12 +36,12 @@ static void ZoroNativeLog(const char *step, const char *msg) {
 }
 
 extern "C" JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
-    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded v8 (diagnostics only, no signal handlers)");
+    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)");
     return JNI_VERSION_1_6;
 }
 
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_zoro_loader_BoxApplication_BoxApp(JNIEnv* env, jobject thiz) {
+Java_com_google_BoxApplication_BoxApp(JNIEnv* env, jobject thiz) {
     ZoroNativeLog("BoxApp", "license key requested");
     return env->NewStringUTF(oxorany("MANISH->4e15d8fc66"));
 }

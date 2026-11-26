@@ -1,4 +1,4 @@
-package com.zoro.loader.activity;
+package com.google.activity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -6,20 +6,22 @@ import android.app.AlertDialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.text.InputType;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.zoro.loader.R;
+import com.google.R;
 import top.niunaijun.blackbox.BlackBoxCore;
 import top.niunaijun.blackbox.core.ZoroLogUploader;
 import top.niunaijun.blackbox.entity.pm.InstallResult;
-import com.zoro.loader.libhelper.FileCopyTask;
-import com.zoro.loader.utils.FLog;
+import com.google.libhelper.FileCopyTask;
+import com.google.utils.FLog;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 // Lottie Animation Import
 import com.airbnb.lottie.LottieAnimationView;
@@ -36,10 +38,27 @@ public class MainActivity extends Activity {
     private static final String LOADER_REPO = "ZOROLOADERlib";
     private static final String AAR_REPO = "BLACK-OPEN-fix-to-ai";
 
+    private static final long SYNC_INTERVAL_MS = 60_000L;
+
     private BlackBoxCore blackBoxCore;
     private Button starthack, stophack, uploadLogs;
     private FileCopyTask fileCopyTask;
     private LottieAnimationView backgroundAnimation; // Lottie Animation View
+
+    // Keep all periodic work on one main-thread handler and reuse parsed objects.
+    private final Handler mainHandler = new Handler(Looper.getMainLooper());
+    private final AtomicBoolean syncInProgress = new AtomicBoolean(false);
+    private final SimpleDateFormat countdownFormat =
+            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+    private final Runnable autoSyncRunnable = new Runnable() {
+        @Override
+        public void run() {
+            syncAllLogs();
+            mainHandler.postDelayed(this, SYNC_INTERVAL_MS);
+        }
+    };
+
+    private TextView tvD, tvH, tvM, tvS;
 
     @SuppressLint("NewApi")
     @Override
@@ -138,17 +157,23 @@ public class MainActivity extends Activity {
     }
 
     private void startAutoSync() {
-        // Starts immediately so logs reach GitHub even if the app is killed shortly after launch.
+        // One recurring job on the main handler; no overlapping upload storms.
+        mainHandler.removeCallbacks(autoSyncRunnable);
         syncAllLogs();
-        new Handler().postDelayed(this::syncAllLogs, 15000);
+        mainHandler.postDelayed(autoSyncRunnable, SYNC_INTERVAL_MS);
     }
 
     /** Uses the credential already saved on this device only. */
     private void syncAllLogs() {
+        if (!syncInProgress.compareAndSet(false, true)) {
+            FLog.info("Log sync skipped: previous sync still running");
+            return;
+        }
         SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         String token = prefs.getString(TOKEN_KEY, "");
         if (token == null || token.trim().isEmpty()) {
             FLog.warning("Log sync skipped: no device credential stored");
+            syncInProgress.set(false);
             return;
         }
         token = token.trim();
@@ -157,12 +182,17 @@ public class MainActivity extends Activity {
         final StringBuilder summary = new StringBuilder();
         FLog.info("Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub");
 
-        sendLog(token, LOADER_REPO, "loader_log.txt", "logs/loader_log.txt", "APK", pending, summary);
-        sendLog(token, LOADER_REPO, "zoro_native.txt", "logs/zoro_native.txt", "Native", pending, summary);
-        sendLog(token, AAR_REPO, "zoro.txt", "logs/zoro.txt", "AAR", pending, summary);
-        sendLog(token, AAR_REPO, "zoro_crash.txt", "logs/zoro_crash.txt", "Crash", pending, summary);
-        sendLog(token, AAR_REPO, "zoro_detect.txt", "logs/zoro_detect.txt", "Detect", pending, summary);
-        sendLog(token, AAR_REPO, "zoro_tombstone.txt", "logs/zoro_tombstone.txt", "Tombstone", pending, summary);
+        try {
+            sendLog(token, LOADER_REPO, "loader_log.txt", "logs/loader_log.txt", "APK", pending, summary);
+            sendLog(token, LOADER_REPO, "zoro_native.txt", "logs/zoro_native.txt", "Native", pending, summary);
+            sendLog(token, AAR_REPO, "zoro.txt", "logs/zoro.txt", "AAR", pending, summary);
+            sendLog(token, AAR_REPO, "zoro_crash.txt", "logs/zoro_crash.txt", "Crash", pending, summary);
+            sendLog(token, AAR_REPO, "zoro_detect.txt", "logs/zoro_detect.txt", "Detect", pending, summary);
+            sendLog(token, AAR_REPO, "zoro_tombstone.txt", "logs/zoro_tombstone.txt", "Tombstone", pending, summary);
+        } catch (Throwable t) {
+            FLog.error("Log sync start failed: " + t);
+            syncInProgress.set(false);
+        }
     }
 
     private void sendLog(final String token, final String repo, final String localFile,
@@ -180,36 +210,40 @@ public class MainActivity extends Activity {
     }
 
     private void syncFinished(int[] pending, StringBuilder summary) {
-        pending[0]--;
-        if (pending[0] == 0) {
+        if (pending[0] <= 0) {
+            return;
+        }
+        if (--pending[0] == 0) {
+            syncInProgress.set(false);
             Toast.makeText(this, "Logs synced to GitHub", Toast.LENGTH_SHORT).show();
         }
     }
 
     private void countDownStart() {
-        final Handler handler = new Handler();
+        // Cache views and formatter once. findViewById + new SimpleDateFormat
+        // every second was pure main-thread overhead.
+        tvD = findViewById(R.id.tv_d);
+        tvH = findViewById(R.id.tv_h);
+        tvM = findViewById(R.id.tv_m);
+        tvS = findViewById(R.id.tv_s);
+
+        final Handler handler = mainHandler;
         final Runnable runnable = new Runnable() {
             @Override
             public void run() {
                 try {
                     String expiryStr = TimeExpired();
                     if (expiryStr != null && !expiryStr.isEmpty()) {
-                        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
-                        Date expiryDate = dateFormat.parse(expiryStr);
+                        Date expiryDate = countdownFormat.parse(expiryStr);
                         long distance = expiryDate.getTime() - System.currentTimeMillis();
 
                         if (distance > 0) {
-                            long days = distance / (24 * 60 * 60 * 1000);
-                            long hours = (distance / (60 * 60 * 1000)) % 24;
-                            long minutes = (distance / (60 * 1000)) % 60;
-                            long seconds = (distance / 1000) % 60;
+                            final long days = distance / (24 * 60 * 60 * 1000);
+                            final long hours = (distance / (60 * 60 * 1000)) % 24;
+                            final long minutes = (distance / (60 * 1000)) % 60;
+                            final long seconds = (distance / 1000) % 60;
 
                             runOnUiThread(() -> {
-                                TextView tvD = findViewById(R.id.tv_d);
-                                TextView tvH = findViewById(R.id.tv_h);
-                                TextView tvM = findViewById(R.id.tv_m);
-                                TextView tvS = findViewById(R.id.tv_s);
-                                
                                 if (tvD != null) tvD.setText(String.format(Locale.getDefault(), "%02d", days));
                                 if (tvH != null) tvH.setText(String.format(Locale.getDefault(), "%02d", hours));
                                 if (tvM != null) tvM.setText(String.format(Locale.getDefault(), "%02d", minutes));
@@ -217,9 +251,10 @@ public class MainActivity extends Activity {
                             });
                         }
                     }
+                } catch (Exception e) {
+                    FLog.error("countdown update failed: " + e);
+                } finally {
                     handler.postDelayed(this, 1000);
-                } catch (Exception e) { 
-                    e.printStackTrace(); 
                 }
             }
         };
@@ -239,14 +274,26 @@ public class MainActivity extends Activity {
     private void installGame() {
         FLog.info("STEP install game in container start");
         Toast.makeText(this, "Installing In Container...", Toast.LENGTH_SHORT).show();
-        InstallResult res = blackBoxCore.installPackageAsUser(BGMI_PACKAGE, USER_ID);
-        if (res.success) {
-            FLog.info("STEP install game success");
-            copyObbFilesAndLaunch();
-        } else {
-            FLog.error("STEP install game failed: " + res.msg);
-            Toast.makeText(this, "Installation Failed: " + res.msg, Toast.LENGTH_SHORT).show();
-        }
+        // Container install is disk-heavy; never run it on the main thread.
+        new Thread(() -> {
+            final InstallResult[] holder = new InstallResult[1];
+            try {
+                holder[0] = blackBoxCore.installPackageAsUser(BGMI_PACKAGE, USER_ID);
+            } catch (Throwable t) {
+                FLog.error("STEP install game threw: " + t);
+            }
+            runOnUiThread(() -> {
+                InstallResult res = holder[0];
+                if (res != null && res.success) {
+                    FLog.info("STEP install game success");
+                    copyObbFilesAndLaunch();
+                } else {
+                    String msg = res == null ? "install error" : res.msg;
+                    FLog.error("STEP install game failed: " + msg);
+                    Toast.makeText(this, "Installation Failed: " + msg, Toast.LENGTH_SHORT).show();
+                }
+            });
+        }, "zoro-install").start();
     }
 
     private void copyObbFilesAndLaunch() {
@@ -255,8 +302,8 @@ public class MainActivity extends Activity {
             FLog.info("STEP OBB copy result: " + success);
             FLog.info("STEP launching game process");
             blackBoxCore.launchApk(BGMI_PACKAGE, USER_ID);
-            // The game dies roughly 2m43s after launch; sync automatically after it.
-            new Handler().postDelayed(this::syncAllLogs, 180000);
+            // Sync after the known death window, on the main looper (callback may be background).
+            mainHandler.postDelayed(this::syncAllLogs, 180000);
         });
     }
 
