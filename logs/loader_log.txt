@@ -1471,3 +1471,22 @@
 2026-11-26 18:56:33.016 [I/FLog] STEP login success, opening MainActivity
 2026-11-26 18:56:33.155 [I/FLog] MainActivity ready
 2026-11-26 18:56:33.163 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
+2026-11-26 18:56:34.137 [I/FLog] STEP start button pressed
+2026-11-26 18:56:34.142 [I/FLog] STEP game already installed in container
+2026-11-26 18:56:34.145 [I/FLog] STEP OBB copy start
+2026-11-26 18:56:34.153 [I/FLog] STEP OBB copy result: true
+2026-11-26 18:56:34.156 [I/FLog] STEP launching game process
+2026-11-26 18:56:35.060 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 18:56:35.072 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 18:56:35.081 [I/FLog] STEP attachBaseContext start
+2026-11-26 18:56:35.532 [I/FLog] STEP attachBaseContext done
+2026-11-26 18:56:36.051 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 18:56:43.589 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 18:56:48.225 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 18:56:51.496 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 18:56:54.618 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 18:56:57.833 [I/FLog] Login log sync: true - Uploaded logs/zoro_login.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 18:56:59.704 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 18:57:33.168 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
+2026-11-26 18:57:35.158 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 18:57:38.888 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
