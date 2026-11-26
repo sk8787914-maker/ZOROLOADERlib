@@ -2193,3 +2193,21 @@
 2026-11-26 20:38:01.554 [I/FLog] STEP login success, opening MainActivity
 2026-11-26 20:38:01.637 [I/FLog] MainActivity ready
 2026-11-26 20:38:01.643 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
+2026-11-26 20:38:02.709 [I/FLog] Log sync skipped: previous sync still running
+2026-11-26 20:38:04.690 [I/FLog] STEP start button pressed
+2026-11-26 20:38:04.696 [I/FLog] STEP game already installed in container
+2026-11-26 20:38:04.699 [I/FLog] STEP OBB copy start
+2026-11-26 20:38:04.704 [I/FLog] STEP OBB copy result: true
+2026-11-26 20:38:04.707 [I/FLog] STEP launching game process
+2026-11-26 20:38:05.126 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 20:38:05.563 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 20:38:05.619 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 20:38:05.643 [I/FLog] STEP attachBaseContext start
+2026-11-26 20:38:06.368 [I/FLog] STEP attachBaseContext done
+2026-11-26 20:38:07.164 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 20:38:13.446 [I/FLog] Login log sync: true - Uploaded logs/zoro_login.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 20:38:17.913 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 20:38:23.737 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 20:38:28.036 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 20:38:32.334 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 20:39:01.650 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
