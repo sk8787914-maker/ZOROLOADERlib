@@ -597,3 +597,12 @@
 2026-11-26 21:07:41 [BoxApp] license key requested
 2026-11-26 21:07:41 [BoxApp] license key requested
 2026-11-26 21:08:24 [JNI_OnLoad] libMCoreEsp loaded v16 (com.google, no process freeze)
+2026-11-26 21:08:59 [JNI_OnLoad] libMCoreEsp loaded v16 (com.google, no process freeze)
+2026-11-26 21:08:59 [BoxApp] license key requested
+2026-11-26 21:08:59 [BoxApp] license key requested
+2026-11-26 21:27:10 [JNI_OnLoad] libMCoreEsp loaded v17 (com.google, shared pending result)
+2026-11-26 21:27:10 [BoxApp] license key requested
+2026-11-26 21:27:10 [BoxApp] license key requested
+2026-11-26 21:27:37 [JNI_OnLoad] libMCoreEsp loaded v17 (com.google, shared pending result)
+2026-11-26 21:27:38 [BoxApp] license key requested
+2026-11-26 21:27:38 [BoxApp] license key requested
