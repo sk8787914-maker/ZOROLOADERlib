@@ -2050,3 +2050,12 @@
 2026-11-26 20:34:15.768 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
 2026-11-26 20:34:21.252 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
 2026-11-26 20:34:25.148 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 20:34:27.743 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 20:34:32.232 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 20:34:32.258 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 20:34:32.293 [I/FLog] STEP attachBaseContext start
+2026-11-26 20:34:32.707 [I/FLog] Login log sync: true - Uploaded logs/zoro_login.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 20:34:33.910 [I/FLog] STEP attachBaseContext done
+2026-11-26 20:34:37.219 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 20:35:09.725 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
+2026-11-26 20:35:11.848 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
