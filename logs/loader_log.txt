@@ -520,3 +520,50 @@
 2026-11-26 16:03:56.339 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
 2026-11-26 16:03:57.896 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
 2026-11-26 16:04:34.645 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
+2026-11-26 16:04:36.996 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 16:04:40.349 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:04:43.950 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:04:45.639 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:04:48.644 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:04:50.643 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 16:05:05.800 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 16:05:05.805 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 16:05:05.808 [I/FLog] STEP attachBaseContext start
+2026-11-26 16:05:05.836 [I/FLog] STEP attachBaseContext done
+2026-11-26 16:05:05.917 [I/FLog] Loader started
+2026-11-26 16:05:05.931 [I/FLog] STEP license native check start
+2026-11-26 16:05:05.936 [I/FLog] STEP license native check done
+2026-11-26 16:05:05.943 [I/FLog] STEP SDK activation done
+2026-11-26 16:05:06.630 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 16:05:06.636 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 16:05:06.640 [I/FLog] STEP attachBaseContext start
+2026-11-26 16:05:07.003 [I/FLog] STEP attachBaseContext done
+2026-11-26 16:08:26.853 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 16:08:26.859 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 16:08:26.863 [I/FLog] STEP attachBaseContext start
+2026-11-26 16:08:26.898 [I/FLog] STEP attachBaseContext done
+2026-11-26 16:08:26.979 [I/FLog] Loader started
+2026-11-26 16:08:26.995 [I/FLog] STEP license native check start
+2026-11-26 16:08:26.999 [I/FLog] STEP license native check done
+2026-11-26 16:08:27.002 [I/FLog] STEP SDK activation done
+2026-11-26 16:08:27.028 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-26 16:08:30.075 [I/FLog] STEP sign-in button pressed
+2026-11-26 16:08:30.102 [I/FLog] STEP native license Check start
+2026-11-26 16:08:31.030 [I/FLog] STEP native license Check returned: OK
+2026-11-26 16:08:31.056 [I/FLog] STEP login success, opening MainActivity
+2026-11-26 16:08:31.136 [I/FLog] MainActivity ready
+2026-11-26 16:08:31.141 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
+2026-11-26 16:08:31.870 [I/FLog] Log sync skipped: previous sync still running
+2026-11-26 16:08:32.776 [I/FLog] STEP start button pressed
+2026-11-26 16:08:32.780 [I/FLog] STEP game already installed in container
+2026-11-26 16:08:32.783 [I/FLog] STEP OBB copy start
+2026-11-26 16:08:32.789 [I/FLog] STEP OBB copy result: true
+2026-11-26 16:08:32.793 [I/FLog] STEP launching game process
+2026-11-26 16:08:33.426 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 16:08:33.438 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 16:08:33.450 [I/FLog] STEP attachBaseContext start
+2026-11-26 16:08:33.901 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:08:33.925 [I/FLog] STEP attachBaseContext done
+2026-11-26 16:08:38.405 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:08:40.171 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:08:43.643 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
