@@ -479,3 +479,27 @@
 2026-11-26 16:02:01.424 [I/FLog] No device credential found - showing one-time setup
 2026-11-26 16:02:21.994 [I/FLog] Device credential saved
 2026-11-26 16:02:21.997 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
+2026-11-26 16:02:23.847 [I/FLog] STEP start button pressed
+2026-11-26 16:02:23.854 [I/FLog] STEP install game in container start
+2026-11-26 16:02:24.062 [E/FLog] STEP install game failed: sdk not activated
+2026-11-26 16:02:24.163 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 16:02:26.473 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 16:02:28.593 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:02:32.126 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:02:34.670 [I/FLog] Crash log sync: false - Software caused connection abort
+2026-11-26 16:02:34.718 [I/FLog] AAR log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 16:03:31.077 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 16:03:31.084 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 16:03:31.088 [I/FLog] STEP attachBaseContext start
+2026-11-26 16:03:31.121 [I/FLog] STEP attachBaseContext done
+2026-11-26 16:03:31.167 [I/FLog] Loader started
+2026-11-26 16:03:31.187 [I/FLog] STEP license native check start
+2026-11-26 16:03:31.192 [I/FLog] STEP license native check done
+2026-11-26 16:03:31.197 [I/FLog] STEP SDK activation done
+2026-11-26 16:03:31.219 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-26 16:03:33.430 [I/FLog] STEP sign-in button pressed
+2026-11-26 16:03:33.457 [I/FLog] STEP native license Check start
+2026-11-26 16:03:34.519 [I/FLog] STEP native license Check returned: OK
+2026-11-26 16:03:34.542 [I/FLog] STEP login success, opening MainActivity
+2026-11-26 16:03:34.634 [I/FLog] MainActivity ready
+2026-11-26 16:03:34.639 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
