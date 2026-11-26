@@ -1,7 +1,6 @@
 #include <jni.h>
 #include <string>
 #include <android/log.h>
-#include <signal.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <time.h>
@@ -36,40 +35,8 @@ static void ZoroNativeLog(const char *step, const char *msg) {
     }
 }
 
-/** Records a fatal native signal then re-raises it so normal crash handling is unchanged. */
-static void ZoroFatalHandler(int sig) {
-    const char *name = "unknown";
-    switch (sig) {
-        case SIGABRT: name = "SIGABRT"; break;
-        case SIGSEGV: name = "SIGSEGV"; break;
-        case SIGBUS:  name = "SIGBUS";  break;
-        case SIGFPE:  name = "SIGFPE";  break;
-        case SIGILL:  name = "SIGILL";  break;
-        default: break;
-    }
-    const char marker[] = "\n[!!! NATIVE FATAL SIGNAL !!!]\n";
-    int fd = open("/sdcard/Download/zoro_native.txt", O_WRONLY | O_CREAT | O_APPEND, 0666);
-    if (fd >= 0) {
-        ssize_t ignored = write(fd, marker, sizeof(marker) - 1);
-        (void) ignored;
-        close(fd);
-    }
-    __android_log_print(ANDROID_LOG_FATAL, NATIVE_TAG, "FATAL SIGNAL %s", name);
-    signal(sig, SIG_DFL);
-    raise(sig);
-}
-
-static void InstallNativeCrashMarkers() {
-    signal(SIGABRT, ZoroFatalHandler);
-    signal(SIGSEGV, ZoroFatalHandler);
-    signal(SIGBUS,  ZoroFatalHandler);
-    signal(SIGFPE,  ZoroFatalHandler);
-    signal(SIGILL,  ZoroFatalHandler);
-}
-
 extern "C" JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
-    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded");
-    InstallNativeCrashMarkers();
+    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded (no signal handlers installed)");
     return JNI_VERSION_1_6;
 }
 

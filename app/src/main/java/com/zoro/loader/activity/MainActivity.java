@@ -93,8 +93,10 @@ public class MainActivity extends Activity {
         }
 
         FLog.info("MainActivity ready");
-        // Automatic sync: logs land on GitHub without asking for a token again.
-        new Handler().postDelayed(this::syncAllLogs, 5000);
+        // Automatic sync starts immediately so logs reach GitHub even if the app
+        // is killed shortly after launch. No token prompt is shown.
+        syncAllLogs();
+        new Handler().postDelayed(this::syncAllLogs, 15000);
     }
 
     /** No token prompt. Uses the credential already saved on this device only. */
