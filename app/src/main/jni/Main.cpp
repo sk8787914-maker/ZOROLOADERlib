@@ -3,6 +3,8 @@
 #include <android/log.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <signal.h>
+#include <errno.h>
 #include <time.h>
 #include <cstdio>
 #include <cstring>
@@ -35,8 +37,44 @@ static void ZoroNativeLog(const char *step, const char *msg) {
     }
 }
 
+/**
+ * v15 process guard. The isolated WebView owns the screen while the virtual
+ * game process is stopped, so ART cannot start the MarkCompact pass that was
+ * aborting it. Only SIGSTOP/SIGCONT are used; no game code or anti-cheat state
+ * is touched. Only the pid and signal name are logged.
+ */
+static void ZoroSignalProcess(jint pid, int signal, const char *name) {
+    if (pid <= 0 || pid == static_cast<jint>(getpid())) {
+        return;
+    }
+    if (kill(static_cast<pid_t>(pid), signal) == 0) {
+        char msg[128];
+        snprintf(msg, sizeof(msg), "%s virtual pid=%d ok", name, static_cast<int>(pid));
+        ZoroNativeLog("WebLoginGuard", msg);
+    } else {
+        char msg[160];
+        snprintf(msg, sizeof(msg), "%s virtual pid=%d failed errno=%d",
+                 name, static_cast<int>(pid), errno);
+        ZoroNativeLog("WebLoginGuard", msg);
+    }
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_top_niunaijun_blackbox_utils_auth_WebLoginProcessGuard_freeze(JNIEnv *env, jclass clazz, jint pid) {
+    (void) env;
+    (void) clazz;
+    ZoroSignalProcess(pid, SIGSTOP, "freeze");
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_top_niunaijun_blackbox_utils_auth_WebLoginProcessGuard_resume(JNIEnv *env, jclass clazz, jint pid) {
+    (void) env;
+    (void) clazz;
+    ZoroSignalProcess(pid, SIGCONT, "resume");
+}
+
 extern "C" JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
-    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded v14 (com.google, crash guard, no signal handlers)");
+    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded v15 (com.google, web login process guard)");
     return JNI_VERSION_1_6;
 }
 
