@@ -2259,3 +2259,31 @@
 2026-11-26 21:03:46.767 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
 2026-11-26 21:03:51.099 [I/FLog] Login log sync: true - Uploaded logs/zoro_login.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
 2026-11-26 21:04:26.124 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
+2026-11-26 21:04:29.047 [I/FLog] APK log sync: false - Software caused connection abort
+2026-11-26 21:04:29.153 [I/FLog] Login log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 21:04:29.431 [I/FLog] AAR log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 21:04:29.577 [I/FLog] Detect log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 21:04:29.656 [I/FLog] Crash log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 21:04:29.670 [I/FLog] Native log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 21:04:29.706 [I/FLog] Tombstone log sync: false - Unable to resolve host "api.github.com": No address associated with hostname
+2026-11-26 21:04:50.825 [I/FLog] STEP start button pressed
+2026-11-26 21:04:50.829 [I/FLog] STEP install game in container start
+2026-11-26 21:04:51.135 [E/FLog] STEP install game failed: sdk not activated
+2026-11-26 21:04:51.214 [I/FLog] STEP start button pressed
+2026-11-26 21:04:51.224 [I/FLog] STEP install game in container start
+2026-11-26 21:04:51.355 [E/FLog] STEP install game failed: sdk not activated
+2026-11-26 21:06:05.092 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 21:06:05.101 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 21:06:05.104 [I/FLog] STEP attachBaseContext start
+2026-11-26 21:06:05.182 [I/FLog] STEP attachBaseContext done
+2026-11-26 21:06:05.246 [I/FLog] Loader started
+2026-11-26 21:06:05.263 [I/FLog] STEP license native check start
+2026-11-26 21:06:05.269 [I/FLog] STEP license native check done
+2026-11-26 21:06:05.277 [I/FLog] STEP SDK activation done
+2026-11-26 21:06:05.291 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-26 21:06:09.196 [I/FLog] STEP sign-in button pressed
+2026-11-26 21:06:09.228 [I/FLog] STEP native license Check start
+2026-11-26 21:06:10.354 [I/FLog] STEP native license Check returned: OK
+2026-11-26 21:06:10.374 [I/FLog] STEP login success, opening MainActivity
+2026-11-26 21:06:10.464 [I/FLog] MainActivity ready
+2026-11-26 21:06:10.470 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
