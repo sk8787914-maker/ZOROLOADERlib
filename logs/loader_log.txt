@@ -591,3 +591,33 @@
 2026-11-26 16:10:41.548 [I/FLog] STEP login success, opening MainActivity
 2026-11-26 16:10:41.635 [I/FLog] MainActivity ready
 2026-11-26 16:10:41.641 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
+2026-11-26 16:10:43.966 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 16:10:44.895 [I/FLog] STEP start button pressed
+2026-11-26 16:10:44.899 [I/FLog] STEP game already installed in container
+2026-11-26 16:10:44.902 [I/FLog] STEP OBB copy start
+2026-11-26 16:10:44.906 [I/FLog] STEP OBB copy result: true
+2026-11-26 16:10:44.908 [I/FLog] STEP launching game process
+2026-11-26 16:10:45.631 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 16:10:45.642 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 16:10:45.650 [I/FLog] STEP attachBaseContext start
+2026-11-26 16:10:45.972 [I/FLog] STEP attachBaseContext done
+2026-11-26 16:10:48.259 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:10:51.315 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:10:52.996 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:10:55.464 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 16:10:58.405 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:11:49.365 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 16:11:49.370 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 16:11:49.376 [I/FLog] STEP attachBaseContext start
+2026-11-26 16:11:49.407 [I/FLog] STEP attachBaseContext done
+2026-11-26 16:11:49.471 [I/FLog] Loader started
+2026-11-26 16:11:49.493 [I/FLog] STEP license native check start
+2026-11-26 16:11:49.498 [I/FLog] STEP license native check done
+2026-11-26 16:11:49.504 [I/FLog] STEP SDK activation done
+2026-11-26 16:11:49.527 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-26 16:12:25.530 [I/FLog] STEP sign-in button pressed
+2026-11-26 16:12:25.559 [I/FLog] STEP native license Check start
+2026-11-26 16:12:26.537 [I/FLog] STEP native license Check returned: OK
+2026-11-26 16:12:26.565 [I/FLog] STEP login success, opening MainActivity
+2026-11-26 16:12:26.640 [I/FLog] MainActivity ready
+2026-11-26 16:12:26.644 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
