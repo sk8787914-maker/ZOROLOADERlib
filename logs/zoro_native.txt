@@ -637,3 +637,9 @@
 2026-11-26 21:50:30 [JNI_OnLoad] libMCoreEsp loaded v18 (com.google, listener replay + relaunch)
 2026-11-26 21:50:31 [BoxApp] license key requested
 2026-11-26 21:50:31 [BoxApp] license key requested
+2026-11-26 21:52:14 [JNI_OnLoad] libMCoreEsp loaded v18 (com.google, listener replay + relaunch)
+2026-11-26 21:52:14 [BoxApp] license key requested
+2026-11-26 21:52:14 [BoxApp] license key requested
+2026-11-26 21:52:21 [JNI_OnLoad] libMCoreEsp loaded v18 (com.google, listener replay + relaunch)
+2026-11-26 21:52:23 [BoxApp] license key requested
+2026-11-26 21:52:23 [BoxApp] license key requested
