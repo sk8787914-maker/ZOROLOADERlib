@@ -36,7 +36,7 @@ static void ZoroNativeLog(const char *step, const char *msg) {
 }
 
 extern "C" JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
-    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded v7 (diagnostics only, no signal handlers)");
+    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded v8 (diagnostics only, no signal handlers)");
     return JNI_VERSION_1_6;
 }
 
