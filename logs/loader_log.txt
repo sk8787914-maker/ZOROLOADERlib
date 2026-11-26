@@ -2578,3 +2578,10 @@
 2026-11-26 21:49:38.478 [I/FLog] login_web process ready without BlackBox hooks
 2026-11-26 21:49:49.851 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
 2026-11-26 21:49:54.100 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 21:49:56.574 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 21:49:59.539 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 21:50:03.118 [I/FLog] Login log sync: true - Uploaded logs/zoro_login.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 21:50:07.381 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 21:50:11.910 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 21:50:16.864 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 21:50:18.877 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
