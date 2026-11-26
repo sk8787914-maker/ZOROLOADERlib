@@ -36,16 +36,17 @@ static void ZoroNativeLog(const char *step, const char *msg) {
 }
 
 /**
- * v17: the old SIGSTOP/SIGCONT guard is still removed. The virtual process can
+ * v18: the old SIGSTOP/SIGCONT guard is still removed. The virtual process can
  * hit an ART MarkCompact abort while the isolated WebView owns the screen, so
  * the web result is stored in the loader's shared internal files directory.
- * A restarted virtual process consumes that result through the existing
- * IMSDK callback instead of bouncing back to the launcher. No process signals
- * and no VM/anti-cheat changes are used here.
+ * Twitter is consumed by the restarted process; Facebook replays into the
+ * recreated IMSDK WebLoginActivity listener. A dead game task is relaunched
+ * before the isolated WebView closes. No process signals and no VM/anti-cheat
+ * changes are used here.
  */
 
 extern "C" JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
-    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded v17 (com.google, shared pending result)");
+    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded v18 (com.google, listener replay + relaunch)");
     return JNI_VERSION_1_6;
 }
 
