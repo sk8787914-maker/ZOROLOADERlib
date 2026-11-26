@@ -153,14 +153,16 @@ public class MainActivity extends Activity {
         }
         token = token.trim();
 
-        final int[] pending = new int[]{4};
+        final int[] pending = new int[]{6};
         final StringBuilder summary = new StringBuilder();
-        FLog.info("Auto-syncing APK, native and AAR logs to GitHub");
+        FLog.info("Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub");
 
         sendLog(token, LOADER_REPO, "loader_log.txt", "logs/loader_log.txt", "APK", pending, summary);
         sendLog(token, LOADER_REPO, "zoro_native.txt", "logs/zoro_native.txt", "Native", pending, summary);
         sendLog(token, AAR_REPO, "zoro.txt", "logs/zoro.txt", "AAR", pending, summary);
         sendLog(token, AAR_REPO, "zoro_crash.txt", "logs/zoro_crash.txt", "Crash", pending, summary);
+        sendLog(token, AAR_REPO, "zoro_detect.txt", "logs/zoro_detect.txt", "Detect", pending, summary);
+        sendLog(token, AAR_REPO, "zoro_tombstone.txt", "logs/zoro_tombstone.txt", "Tombstone", pending, summary);
     }
 
     private void sendLog(final String token, final String repo, final String localFile,
