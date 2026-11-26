@@ -1042,3 +1042,28 @@
 2026-11-26 17:50:57.433 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
 2026-11-26 17:51:37.558 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
 2026-11-26 17:51:39.522 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 17:51:42.294 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 17:51:43.913 [I/FLog] Login log sync: true - Uploaded logs/zoro_login.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:51:47.468 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:51:50.762 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:51:53.185 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:51:57.755 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 17:51:57.762 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 17:51:57.770 [I/FLog] STEP attachBaseContext start
+2026-11-26 17:51:57.802 [I/FLog] STEP attachBaseContext done
+2026-11-26 17:51:57.879 [I/FLog] Loader started
+2026-11-26 17:51:57.888 [I/FLog] STEP license native check start
+2026-11-26 17:51:57.893 [I/FLog] STEP license native check done
+2026-11-26 17:51:57.902 [I/FLog] STEP SDK activation done
+2026-11-26 17:51:57.916 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-26 17:52:01.499 [I/FLog] STEP sign-in button pressed
+2026-11-26 17:52:01.530 [I/FLog] STEP native license Check start
+2026-11-26 17:52:02.457 [I/FLog] STEP native license Check returned: OK
+2026-11-26 17:52:02.481 [I/FLog] STEP login success, opening MainActivity
+2026-11-26 17:52:02.574 [I/FLog] MainActivity ready
+2026-11-26 17:52:02.579 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
+2026-11-26 17:52:03.961 [I/FLog] STEP start button pressed
+2026-11-26 17:52:03.965 [I/FLog] STEP game already installed in container
+2026-11-26 17:52:03.967 [I/FLog] STEP OBB copy start
+2026-11-26 17:52:03.974 [I/FLog] STEP OBB copy result: true
+2026-11-26 17:52:03.976 [I/FLog] STEP launching game process
