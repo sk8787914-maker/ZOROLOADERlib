@@ -672,3 +672,22 @@
 2026-11-26 16:14:47.388 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
 2026-11-26 16:14:49.493 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
 2026-11-26 16:15:32.139 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
+2026-11-26 16:15:35.395 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 16:15:39.455 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 16:32:09.523 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 16:32:09.528 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 16:32:09.531 [I/FLog] STEP attachBaseContext start
+2026-11-26 16:32:09.561 [I/FLog] STEP attachBaseContext done
+2026-11-26 16:32:09.591 [I/FLog] Loader started
+2026-11-26 16:32:09.606 [I/FLog] STEP license native check start
+2026-11-26 16:32:09.610 [I/FLog] STEP license native check done
+2026-11-26 16:32:09.615 [I/FLog] STEP SDK activation done
+2026-11-26 16:32:09.627 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-26 16:32:54.256 [I/FLog] STEP sign-in button pressed
+2026-11-26 16:32:54.332 [I/FLog] STEP native license Check start
+2026-11-26 16:32:55.377 [I/FLog] STEP native license Check returned: OK
+2026-11-26 16:32:55.421 [I/FLog] STEP login success, opening MainActivity
+2026-11-26 16:32:55.567 [I/FLog] MainActivity ready
+2026-11-26 16:32:55.571 [I/FLog] No device credential found - showing one-time setup
+2026-11-26 16:33:10.510 [I/FLog] Device credential saved
+2026-11-26 16:33:10.513 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
