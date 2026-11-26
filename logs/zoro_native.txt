@@ -115,3 +115,6 @@
 2026-11-26 15:39:45 [JNI_OnLoad] libMCoreEsp loaded v8 (diagnostics only, no signal handlers)
 2026-11-26 15:39:46 [BoxApp] license key requested
 2026-11-26 15:39:46 [BoxApp] license key requested
+2026-11-26 16:01:53 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 16:01:53 [BoxApp] license key requested
+2026-11-26 16:01:53 [BoxApp] license key requested
