@@ -24,17 +24,26 @@ public class FLog {
     }
 
     private static void write(String level, String msg) {
-        String line = LoaderLogger.timestamp() + " [" + level + "/" + TAG + "] " + msg;
-        LoaderLogger.append(line);
+        // This class runs in virtual processes too. Never let diagnostics throw.
+        try {
+            String line = LoaderLogger.timestamp() + " [" + level + "/" + TAG + "] " + msg;
+            LoaderLogger.append(line);
+        } catch (Throwable ignored) {
+            // Swallowed on purpose.
+        }
         if (BuildConfig.DEBUG) {
-            if ("E".equals(level)) {
-                Log.e(TAG, msg);
-            } else if ("W".equals(level)) {
-                Log.w(TAG, msg);
-            } else if ("I".equals(level)) {
-                Log.i(TAG, msg);
-            } else {
-                Log.d(TAG, msg);
+            try {
+                if ("E".equals(level)) {
+                    Log.e(TAG, msg);
+                } else if ("W".equals(level)) {
+                    Log.w(TAG, msg);
+                } else if ("I".equals(level)) {
+                    Log.i(TAG, msg);
+                } else {
+                    Log.d(TAG, msg);
+                }
+            } catch (Throwable ignored) {
+                // Swallowed on purpose.
             }
         }
     }

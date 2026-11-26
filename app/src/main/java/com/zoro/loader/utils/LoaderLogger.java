@@ -11,6 +11,11 @@ import java.util.Locale;
 /**
  * Writes loader-side diagnostics to Download/loader_log.txt.
  * Rotates to loader_log.1.txt after 5 MB.
+ *
+ * IMPORTANT: this class is also loaded inside BlackBox virtual processes (:p0).
+ * There, Environment.getExternalStoragePublicDirectory() can throw
+ * ArrayIndexOutOfBoundsException because no storage volumes are mapped.
+ * Logging must NEVER throw, otherwise the virtual process dies at startup.
  */
 public final class LoaderLogger {
     private static final String FILE_NAME = "loader_log.txt";
@@ -22,13 +27,28 @@ public final class LoaderLogger {
     }
 
     public static File getLogFile() {
-        return new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), FILE_NAME);
+        try {
+            return new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), FILE_NAME);
+        } catch (Throwable ignored) {
+            // Virtual process / no storage volumes: use the literal path and fail soft below.
+            try {
+                return new File("/sdcard/Download", FILE_NAME);
+            } catch (Throwable ignoredToo) {
+                return null;
+            }
+        }
     }
 
     public static void append(String line) {
+        if (line == null) {
+            return;
+        }
         synchronized (LOCK) {
-            File file = getLogFile();
             try {
+                File file = getLogFile();
+                if (file == null) {
+                    return;
+                }
                 File dir = file.getParentFile();
                 if (dir != null && !dir.exists()) {
                     dir.mkdirs();
@@ -50,12 +70,16 @@ public final class LoaderLogger {
                     writer.close();
                 }
             } catch (Throwable ignored) {
-                // Logging must never break the app.
+                // Diagnostics must never affect the host or virtual process.
             }
         }
     }
 
     public static String timestamp() {
-        return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.US).format(new Date());
+        try {
+            return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.US).format(new Date());
+        } catch (Throwable ignored) {
+            return "0000-00-00 00:00:00.000";
+        }
     }
 }
