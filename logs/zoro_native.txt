@@ -510,3 +510,6 @@
 2026-11-26 20:34:32 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
 2026-11-26 20:34:34 [BoxApp] license key requested
 2026-11-26 20:34:34 [BoxApp] license key requested
+2026-11-26 20:35:18 [WebLoginGuard] freeze virtual pid=12909 ok
+2026-11-26 20:35:18 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
+2026-11-26 20:36:07 [WebLoginGuard] resume virtual pid=12909 failed errno=3
