@@ -1890,3 +1890,16 @@
 2026-11-26 19:59:23.767 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
 2026-11-26 19:59:23.774 [I/FLog] STEP attachBaseContext start
 2026-11-26 19:59:24.070 [I/FLog] STEP attachBaseContext done
+2026-11-26 19:59:24.808 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 19:59:28.417 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 19:59:31.042 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 19:59:37.494 [I/FLog] Login log sync: true - Uploaded logs/zoro_login.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 19:59:41.486 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 19:59:47.327 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 19:59:52.137 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 20:00:12.605 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 20:00:12.610 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 20:00:12.612 [I/FLog] STEP attachBaseContext start
+2026-11-26 20:00:12.616 [I/FLog] login_web process: BlackBox hooks skipped
+2026-11-26 20:00:12.620 [I/FLog] login_web process ready without BlackBox hooks
+2026-11-26 20:00:22.065 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
