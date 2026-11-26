@@ -809,3 +809,25 @@
 2026-11-26 17:03:52.549 [I/FLog] No device credential found - showing one-time setup
 2026-11-26 17:04:06.277 [I/FLog] Device credential saved
 2026-11-26 17:04:06.280 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
+2026-11-26 17:04:07.883 [I/FLog] STEP start button pressed
+2026-11-26 17:04:07.887 [I/FLog] STEP install game in container start
+2026-11-26 17:04:08.051 [I/FLog] STEP install game success
+2026-11-26 17:04:08.054 [I/FLog] STEP OBB copy start
+2026-11-26 17:04:08.061 [I/FLog] STEP OBB copy result: true
+2026-11-26 17:04:08.064 [I/FLog] STEP launching game process
+2026-11-26 17:04:08.802 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 17:04:08.814 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-26 17:04:08.834 [I/FLog] STEP attachBaseContext start
+2026-11-26 17:04:09.187 [I/FLog] STEP attachBaseContext done
+2026-11-26 17:04:09.449 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 17:04:11.021 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 17:04:15.310 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:04:19.091 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:04:26.185 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:04:27.902 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:05:06.326 [I/FLog] Auto-syncing APK, native, AAR, crash, detection and tombstone logs to GitHub
+2026-11-26 17:05:08.876 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 17:05:10.529 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:05:13.701 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:05:18.450 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:05:23.498 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
