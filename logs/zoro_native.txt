@@ -91,3 +91,9 @@
 2026-11-26 14:59:53 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
 2026-11-26 14:59:54 [BoxApp] license key requested
 2026-11-26 14:59:54 [BoxApp] license key requested
+2026-11-26 15:11:48 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 15:11:48 [BoxApp] license key requested
+2026-11-26 15:11:48 [BoxApp] license key requested
+2026-11-26 15:13:57 [JNI_OnLoad] libMCoreEsp loaded v7 (diagnostics only, no signal handlers)
+2026-11-26 15:13:57 [BoxApp] license key requested
+2026-11-26 15:13:57 [BoxApp] license key requested
