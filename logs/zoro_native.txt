@@ -1,0 +1,82 @@
+2026-11-26 14:40:05 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:05 [BoxApp] license key requested
+2026-11-26 14:40:05 [BoxApp] license key requested
+2026-11-26 14:40:13 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:14 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:15 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:16 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:17 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:17 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:18 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:18 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:19 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:20 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:20 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:21 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:21 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:23 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:24 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:25 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:25 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:26 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:26 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:27 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:27 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:28 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:28 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:29 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:29 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:40:30 [JNI_OnLoad] libMCoreEsp loaded
+2026-11-26 14:47:01 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:01 [BoxApp] license key requested
+2026-11-26 14:47:01 [BoxApp] license key requested
+2026-11-26 14:47:09 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:10 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:11 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:12 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:13 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:13 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:14 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:14 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:15 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:15 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:16 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:16 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:17 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:18 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:19 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:20 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:21 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:22 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:22 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:23 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:23 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:24 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:24 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:25 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:25 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:47:25 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:52:15 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:52:15 [BoxApp] license key requested
+2026-11-26 14:52:15 [BoxApp] license key requested
+2026-11-26 14:53:12 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:13 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:13 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:14 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:14 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:15 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:15 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:15 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:16 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:17 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:17 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:18 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:18 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:20 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:21 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:22 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:23 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:24 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:24 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:25 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
+2026-11-26 14:53:25 [JNI_OnLoad] libMCoreEsp loaded (no signal handlers installed)
