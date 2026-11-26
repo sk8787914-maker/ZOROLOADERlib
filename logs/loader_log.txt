@@ -1,2 +1,179 @@
 2026-11-26 14:19:42.696 [I/FLog] Loader started
 2026-11-26 14:21:43.069 [I/FLog] Uploading runtime logs to GitHub
+2026-11-26 14:21:44.876 [I/FLog] loader log upload: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 14:21:46.431 [I/FLog] AAR log upload: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 14:40:05.117 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:05.122 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:05.146 [I/FLog] STEP attachBaseContext done
+2026-11-26 14:40:05.191 [I/FLog] Loader started
+2026-11-26 14:40:05.214 [I/FLog] STEP license native check start
+2026-11-26 14:40:05.218 [I/FLog] STEP license native check done
+2026-11-26 14:40:05.223 [I/FLog] STEP SDK activation done
+2026-11-26 14:40:05.244 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-26 14:40:10.119 [I/FLog] STEP sign-in button pressed
+2026-11-26 14:40:10.161 [I/FLog] STEP native license Check start
+2026-11-26 14:40:11.271 [I/FLog] STEP native license Check returned: OK
+2026-11-26 14:40:11.289 [I/FLog] STEP login success, opening MainActivity
+2026-11-26 14:40:11.412 [I/FLog] MainActivity ready
+2026-11-26 14:40:13.030 [I/FLog] STEP start button pressed
+2026-11-26 14:40:13.034 [I/FLog] STEP install game in container start
+2026-11-26 14:40:13.115 [I/FLog] STEP install game success
+2026-11-26 14:40:13.118 [I/FLog] STEP OBB copy start
+2026-11-26 14:40:13.125 [I/FLog] STEP OBB copy result: true
+2026-11-26 14:40:13.128 [I/FLog] STEP launching game process
+2026-11-26 14:40:13.726 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:13.735 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:14.547 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:14.551 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:15.593 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:15.611 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:16.231 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:16.247 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:16.446 [W/FLog] Log sync skipped: no device credential stored
+2026-11-26 14:40:17.466 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:17.472 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:17.802 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:17.806 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:18.527 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:18.530 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:18.924 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:18.930 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:19.639 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:19.643 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:20.013 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:20.023 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:20.725 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:20.728 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:21.025 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:21.029 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:21.336 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:21.340 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:23.392 [I/FLog] STEP start button pressed
+2026-11-26 14:40:23.396 [I/FLog] STEP game already installed in container
+2026-11-26 14:40:23.399 [I/FLog] STEP OBB copy start
+2026-11-26 14:40:23.402 [I/FLog] STEP OBB copy result: true
+2026-11-26 14:40:23.405 [I/FLog] STEP launching game process
+2026-11-26 14:40:23.692 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:23.702 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:24.341 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:24.357 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:25.150 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:25.154 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:25.605 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:25.616 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:26.498 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:26.531 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:26.952 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:26.961 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:27.649 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:27.652 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:27.990 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:27.997 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:28.666 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:28.669 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:28.980 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:28.984 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:29.669 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:29.673 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:29.953 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:29.959 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:30.255 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:40:30.260 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:40:31.574 [W/FLog] Log sync skipped: no device credential stored
+2026-11-26 14:40:45.093 [W/FLog] Log sync skipped: no device credential stored
+2026-11-26 14:47:01.335 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:01.341 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:01.363 [I/FLog] STEP attachBaseContext done
+2026-11-26 14:47:01.452 [I/FLog] Loader started
+2026-11-26 14:47:01.492 [I/FLog] STEP license native check start
+2026-11-26 14:47:01.521 [I/FLog] STEP license native check done
+2026-11-26 14:47:01.566 [I/FLog] STEP SDK activation done
+2026-11-26 14:47:01.577 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-26 14:47:05.846 [I/FLog] STEP sign-in button pressed
+2026-11-26 14:47:05.873 [I/FLog] STEP native license Check start
+2026-11-26 14:47:08.293 [I/FLog] STEP native license Check returned: OK
+2026-11-26 14:47:08.312 [I/FLog] STEP login success, opening MainActivity
+2026-11-26 14:47:08.448 [I/FLog] MainActivity ready
+2026-11-26 14:47:08.452 [W/FLog] Log sync skipped: no device credential stored
+2026-11-26 14:47:09.271 [I/FLog] STEP start button pressed
+2026-11-26 14:47:09.275 [I/FLog] STEP install game in container start
+2026-11-26 14:47:09.372 [I/FLog] STEP install game success
+2026-11-26 14:47:09.375 [I/FLog] STEP OBB copy start
+2026-11-26 14:47:09.384 [I/FLog] STEP OBB copy result: true
+2026-11-26 14:47:09.387 [I/FLog] STEP launching game process
+2026-11-26 14:47:09.968 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:09.986 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:10.649 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:10.654 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:11.673 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:11.679 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:12.217 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:12.224 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:13.304 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:13.307 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:13.603 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:13.608 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:14.355 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:14.359 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:14.659 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:14.675 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:15.404 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:15.408 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:15.766 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:15.771 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:16.439 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:16.442 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:16.732 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:16.742 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:17.095 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:17.098 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:18.507 [I/FLog] STEP start button pressed
+2026-11-26 14:47:18.512 [I/FLog] STEP game already installed in container
+2026-11-26 14:47:18.515 [I/FLog] STEP OBB copy start
+2026-11-26 14:47:18.520 [I/FLog] STEP OBB copy result: true
+2026-11-26 14:47:18.523 [I/FLog] STEP launching game process
+2026-11-26 14:47:18.830 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:18.838 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:19.567 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:19.578 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:20.480 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:20.489 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:21.073 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:21.079 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:22.012 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:22.022 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:22.383 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:22.387 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:23.109 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:23.114 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:23.416 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:23.420 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:23.458 [W/FLog] Log sync skipped: no device credential stored
+2026-11-26 14:47:24.169 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:24.174 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:24.470 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:24.478 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:25.194 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:25.197 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:25.514 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:25.518 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:25.828 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:47:25.833 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:47:27.047 [W/FLog] Log sync skipped: no device credential stored
+2026-11-26 14:47:28.480 [W/FLog] Log sync skipped: no device credential stored
+2026-11-26 14:52:15.526 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-26 14:52:15.530 [I/FLog] STEP attachBaseContext start
+2026-11-26 14:52:15.553 [I/FLog] STEP attachBaseContext done
+2026-11-26 14:52:15.593 [I/FLog] Loader started
+2026-11-26 14:52:15.608 [I/FLog] STEP license native check start
+2026-11-26 14:52:15.611 [I/FLog] STEP license native check done
+2026-11-26 14:52:15.617 [I/FLog] STEP SDK activation done
+2026-11-26 14:52:15.628 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-26 14:52:20.083 [I/FLog] STEP sign-in button pressed
+2026-11-26 14:52:20.110 [I/FLog] STEP native license Check start
+2026-11-26 14:52:21.022 [I/FLog] STEP native license Check returned: OK
+2026-11-26 14:52:21.050 [I/FLog] STEP login success, opening MainActivity
+2026-11-26 14:52:21.181 [I/FLog] MainActivity ready
+2026-11-26 14:52:21.184 [I/FLog] No device credential found - showing one-time setup
+2026-11-26 14:53:10.593 [I/FLog] Device credential saved
+2026-11-26 14:53:10.597 [I/FLog] Auto-syncing APK, native and AAR logs to GitHub
