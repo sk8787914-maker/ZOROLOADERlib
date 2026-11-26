@@ -519,3 +519,4 @@
 2026-11-26 20:36:26 [JNI_OnLoad] libMCoreEsp loaded v15 (com.google, web login process guard)
 2026-11-26 20:36:27 [BoxApp] license key requested
 2026-11-26 20:36:27 [BoxApp] license key requested
+2026-11-26 20:37:11 [WebLoginGuard] freeze virtual pid=14794 ok
