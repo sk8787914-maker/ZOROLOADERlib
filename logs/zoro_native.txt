@@ -316,3 +316,68 @@
 2026-11-26 18:55:18 [BoxApp] license key requested
 2026-11-26 18:55:18 [BoxApp] license key requested
 2026-11-26 18:55:20 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:20 [BoxApp] license key requested
+2026-11-26 18:55:20 [BoxApp] license key requested
+2026-11-26 18:55:22 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:22 [BoxApp] license key requested
+2026-11-26 18:55:22 [BoxApp] license key requested
+2026-11-26 18:55:24 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:24 [BoxApp] license key requested
+2026-11-26 18:55:24 [BoxApp] license key requested
+2026-11-26 18:55:26 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:26 [BoxApp] license key requested
+2026-11-26 18:55:26 [BoxApp] license key requested
+2026-11-26 18:55:28 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:28 [BoxApp] license key requested
+2026-11-26 18:55:28 [BoxApp] license key requested
+2026-11-26 18:55:30 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:31 [BoxApp] license key requested
+2026-11-26 18:55:31 [BoxApp] license key requested
+2026-11-26 18:55:32 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:33 [BoxApp] license key requested
+2026-11-26 18:55:33 [BoxApp] license key requested
+2026-11-26 18:55:35 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:35 [BoxApp] license key requested
+2026-11-26 18:55:35 [BoxApp] license key requested
+2026-11-26 18:55:37 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:37 [BoxApp] license key requested
+2026-11-26 18:55:37 [BoxApp] license key requested
+2026-11-26 18:55:39 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:39 [BoxApp] license key requested
+2026-11-26 18:55:39 [BoxApp] license key requested
+2026-11-26 18:55:41 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:41 [BoxApp] license key requested
+2026-11-26 18:55:41 [BoxApp] license key requested
+2026-11-26 18:55:43 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:43 [BoxApp] license key requested
+2026-11-26 18:55:43 [BoxApp] license key requested
+2026-11-26 18:55:45 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:45 [BoxApp] license key requested
+2026-11-26 18:55:45 [BoxApp] license key requested
+2026-11-26 18:55:47 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:48 [BoxApp] license key requested
+2026-11-26 18:55:48 [BoxApp] license key requested
+2026-11-26 18:55:49 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:50 [BoxApp] license key requested
+2026-11-26 18:55:50 [BoxApp] license key requested
+2026-11-26 18:55:52 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:52 [BoxApp] license key requested
+2026-11-26 18:55:52 [BoxApp] license key requested
+2026-11-26 18:55:54 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:54 [BoxApp] license key requested
+2026-11-26 18:55:54 [BoxApp] license key requested
+2026-11-26 18:55:56 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:56 [BoxApp] license key requested
+2026-11-26 18:55:56 [BoxApp] license key requested
+2026-11-26 18:55:58 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:55:58 [BoxApp] license key requested
+2026-11-26 18:55:58 [BoxApp] license key requested
+2026-11-26 18:56:00 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:56:00 [BoxApp] license key requested
+2026-11-26 18:56:00 [BoxApp] license key requested
+2026-11-26 18:56:29 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:56:29 [BoxApp] license key requested
+2026-11-26 18:56:29 [BoxApp] license key requested
+2026-11-26 18:56:35 [JNI_OnLoad] libMCoreEsp loaded v9 (com.google, crash guard, no signal handlers)
+2026-11-26 18:56:35 [BoxApp] license key requested
+2026-11-26 18:56:35 [BoxApp] license key requested
