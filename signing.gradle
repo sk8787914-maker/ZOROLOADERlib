@@ -1,0 +1,23 @@
+// Signing setup for CI.
+//
+// Debug builds use Android's default debug keystore, so an installable APK can
+// be produced without committing any keystore or password to the repository.
+//
+// Release signing is only configured when the following environment variables
+// are provided (for example via GitHub Secrets):
+//   STORE_FILE, STORE_PASSWORD, KEY_ALIAS, KEY_PASSWORD
+android {
+    signingConfigs {
+        def ciStoreFile = System.getenv("STORE_FILE")
+        if (ciStoreFile != null && ciStoreFile.length() > 0) {
+            release {
+                storeFile rootProject.file(ciStoreFile)
+                storePassword System.getenv("STORE_PASSWORD")
+                keyAlias System.getenv("KEY_ALIAS")
+                keyPassword System.getenv("KEY_PASSWORD")
+                v1SigningEnabled true
+                v2SigningEnabled true
+            }
+        }
+    }
+}

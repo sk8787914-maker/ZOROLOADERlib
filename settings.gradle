@@ -1,0 +1,5 @@
+// The BLACK-OPEN source is consumed as the prebuilt AAR in app/libs,
+// so only the loader application module is included here.
+include ':app'
+
+rootProject.name = "zoro"
