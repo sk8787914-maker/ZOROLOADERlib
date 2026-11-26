@@ -1108,3 +1108,10 @@
 2026-11-26 17:53:31.211 [I/FLog] STEP attachBaseContext start
 2026-11-26 17:53:31.433 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
 2026-11-26 17:53:31.511 [I/FLog] STEP attachBaseContext done
+2026-11-26 17:53:33.701 [I/FLog] Login log sync: true - Uploaded logs/zoro_login.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:53:36.166 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-26 17:53:40.234 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:53:43.759 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:53:46.247 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:53:49.379 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-26 17:54:29.485 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
