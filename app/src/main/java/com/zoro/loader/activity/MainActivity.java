@@ -2,13 +2,10 @@ package com.zoro.loader.activity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-import android.text.InputType;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.zoro.loader.R;
@@ -31,6 +28,10 @@ public class MainActivity extends Activity {
 
     private static final String BGMI_PACKAGE = "com.pubg.imobile";
     private static final int USER_ID = 0;
+    private static final String PREFS_NAME = "zoro_upload";
+    private static final String TOKEN_KEY = "gh_token";
+    private static final String LOADER_REPO = "ZOROLOADERlib";
+    private static final String AAR_REPO = "BLACK-OPEN-fix-to-ai";
 
     private BlackBoxCore blackBoxCore;
     private Button starthack, stophack, uploadLogs;
@@ -88,60 +89,52 @@ public class MainActivity extends Activity {
         }
 
         if (uploadLogs != null) {
-            uploadLogs.setOnClickListener(view -> showUploadDialog());
+            uploadLogs.setOnClickListener(view -> syncAllLogs());
         }
+
+        FLog.info("MainActivity ready");
+        // Automatic sync: logs land on GitHub without asking for a token again.
+        new Handler().postDelayed(this::syncAllLogs, 5000);
     }
 
-    private void showUploadDialog() {
-        final SharedPreferences prefs = getSharedPreferences("zoro_upload", MODE_PRIVATE);
-        final EditText input = new EditText(this);
-        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-        input.setText(prefs.getString("gh_token", ""));
-        input.setHint("GitHub token (repo scope)");
+    /** No token prompt. Uses the credential already saved on this device only. */
+    private void syncAllLogs() {
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        String token = prefs.getString(TOKEN_KEY, "");
+        if (token == null || token.trim().isEmpty()) {
+            FLog.warning("Log sync skipped: no device credential stored");
+            return;
+        }
+        token = token.trim();
 
-        new AlertDialog.Builder(this)
-                .setTitle("Upload runtime logs")
-                .setMessage("Loader log -> ZOROLOADERlib, AAR log -> BLACK-OPEN-fix-to-ai. Token is stored only on this device, never in the APK.")
-                .setView(input)
-                .setPositiveButton("Upload", (dialog, which) -> {
-                    String token = input.getText().toString().trim();
-                    prefs.edit().putString("gh_token", token).apply();
-                    uploadBothLogs(token);
-                })
-                .setNegativeButton("Cancel", null)
-                .show();
-    }
-
-    private void uploadBothLogs(String token) {
-        final int[] pending = new int[]{2};
+        final int[] pending = new int[]{4};
         final StringBuilder summary = new StringBuilder();
-        FLog.info("Uploading runtime logs to GitHub");
+        FLog.info("Auto-syncing APK, native and AAR logs to GitHub");
 
-        ZoroLogUploader.upload(this, token, "sk8787914-maker", "ZOROLOADERlib", "main",
-                "loader_log.txt", "logs/loader_log.txt", new ZoroLogUploader.Callback() {
+        sendLog(token, LOADER_REPO, "loader_log.txt", "logs/loader_log.txt", "APK", pending, summary);
+        sendLog(token, LOADER_REPO, "zoro_native.txt", "logs/zoro_native.txt", "Native", pending, summary);
+        sendLog(token, AAR_REPO, "zoro.txt", "logs/zoro.txt", "AAR", pending, summary);
+        sendLog(token, AAR_REPO, "zoro_crash.txt", "logs/zoro_crash.txt", "Crash", pending, summary);
+    }
+
+    private void sendLog(final String token, final String repo, final String localFile,
+                         final String remotePath, final String label, final int[] pending,
+                         final StringBuilder summary) {
+        ZoroLogUploader.upload(this, token, "sk8787914-maker", repo, "main", localFile,
+                remotePath, new ZoroLogUploader.Callback() {
                     @Override
                     public void onResult(boolean success, String message) {
-                        FLog.info("loader log upload: " + success + " - " + message);
-                        summary.append("Loader: ").append(message).append('\n');
-                        uploadFinished(pending, summary);
-                    }
-                });
-
-        ZoroLogUploader.upload(this, token, "sk8787914-maker", "BLACK-OPEN-fix-to-ai", "main",
-                "zoro.txt", "logs/zoro.txt", new ZoroLogUploader.Callback() {
-                    @Override
-                    public void onResult(boolean success, String message) {
-                        FLog.info("AAR log upload: " + success + " - " + message);
-                        summary.append("AAR: ").append(message).append('\n');
-                        uploadFinished(pending, summary);
+                        FLog.info(label + " log sync: " + success + " - " + message);
+                        summary.append(label).append(": ").append(message).append('\n');
+                        syncFinished(pending, summary);
                     }
                 });
     }
 
-    private void uploadFinished(int[] pending, StringBuilder summary) {
+    private void syncFinished(int[] pending, StringBuilder summary) {
         pending[0]--;
         if (pending[0] == 0) {
-            Toast.makeText(this, summary.toString(), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Logs synced to GitHub", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -186,7 +179,9 @@ public class MainActivity extends Activity {
     }
 
     private void handleStart() {
+        FLog.info("STEP start button pressed");
         if (blackBoxCore.isInstalled(BGMI_PACKAGE, USER_ID)) {
+            FLog.info("STEP game already installed in container");
             copyObbFilesAndLaunch();
         } else {
             installGame();
@@ -194,23 +189,33 @@ public class MainActivity extends Activity {
     }
 
     private void installGame() {
+        FLog.info("STEP install game in container start");
         Toast.makeText(this, "Installing In Container...", Toast.LENGTH_SHORT).show();
         InstallResult res = blackBoxCore.installPackageAsUser(BGMI_PACKAGE, USER_ID);
         if (res.success) {
+            FLog.info("STEP install game success");
             copyObbFilesAndLaunch();
         } else {
+            FLog.error("STEP install game failed: " + res.msg);
             Toast.makeText(this, "Installation Failed: " + res.msg, Toast.LENGTH_SHORT).show();
         }
     }
 
     private void copyObbFilesAndLaunch() {
+        FLog.info("STEP OBB copy start");
         fileCopyTask.copyObbFolderAsync(BGMI_PACKAGE, success -> {
+            FLog.info("STEP OBB copy result: " + success);
+            FLog.info("STEP launching game process");
             blackBoxCore.launchApk(BGMI_PACKAGE, USER_ID);
+            // The game dies roughly 2m43s after launch; sync automatically after it.
+            new Handler().postDelayed(this::syncAllLogs, 180000);
         });
     }
 
     private void handleStop() {
+        FLog.info("STEP uninstall game start");
         blackBoxCore.uninstallPackageAsUser(BGMI_PACKAGE, USER_ID);
+        FLog.info("STEP uninstall game done");
         Toast.makeText(this, "Game Uninstalled From Container", Toast.LENGTH_SHORT).show();
     }
     

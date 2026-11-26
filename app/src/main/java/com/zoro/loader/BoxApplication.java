@@ -27,14 +27,16 @@ public class BoxApplication extends Application {
         try {
             // 🔥 Library load ho rahi hai
             System.loadLibrary("MCoreEsp");
+            FLog.info("STEP native lib MCoreEsp loaded");
         } catch (UnsatisfiedLinkError w) {
-            FLog.error(w.getMessage() != null ? w.getMessage() : "Load lib error");
+            FLog.error("STEP native lib load failed: " + (w.getMessage() != null ? w.getMessage() : "Load lib error"));
         }
     }
 
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
+        FLog.info("STEP attachBaseContext start");
         try {
             BlackBoxCore.get().doAttachBaseContext(base, new ClientConfiguration() {
                 // @Override HATAYA - ab compiler error nahi dega
@@ -57,7 +59,9 @@ public class BoxApplication extends Application {
                     return true;
                 }
             });
+            FLog.info("STEP attachBaseContext done");
         } catch (Exception e) {
+            FLog.error("STEP attachBaseContext failed: " + e.getMessage());
             e.printStackTrace();
         }
     }
@@ -71,10 +75,13 @@ public class BoxApplication extends Application {
         BlackBoxCore.get().doCreate();
 
         try {
+            FLog.info("STEP license native check start");
             String key = BoxApp();
             Log.d("LICENSE_DEBUG", "KEY: " + key);
+            FLog.info("STEP license native check done");
 
-            MetaActivationManager.activateSdk(BoxApp());    
+            MetaActivationManager.activateSdk(BoxApp());
+            FLog.info("STEP SDK activation done");
             //   MetaActivationManager.verifyLicense(Context, String)
             //   MetaActivationManager.verifyLicense(this, key);
 

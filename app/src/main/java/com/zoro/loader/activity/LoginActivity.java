@@ -40,8 +40,9 @@ public class LoginActivity extends AppCompatActivity {
     static {
         try {
             System.loadLibrary("MCoreEsp");
+            FLog.info("STEP LoginActivity native lib loaded");
         } catch (UnsatisfiedLinkError w) {
-            FLog.error(w.getMessage());
+            FLog.error("STEP LoginActivity native lib load failed: " + w.getMessage());
         }
     }
 
@@ -147,6 +148,7 @@ public class LoginActivity extends AppCompatActivity {
         btnSignIn.setOnClickListener(v -> {
             String userKey = textUsername.getText().toString().trim();
             if (!userKey.isEmpty()) {
+                FLog.info("STEP sign-in button pressed");
                 prefs.setSt("USER", userKey);
                 USERKEY = userKey;
                 login(userKey);
@@ -215,19 +217,23 @@ public class LoginActivity extends AppCompatActivity {
         Handler loginHandler = new Handler(msg -> {
             dismissLoadingDialog();
             if (msg.what == 0) {
+                FLog.info("STEP login success, opening MainActivity");
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 Toast.makeText(this, "Login Success✅", Toast.LENGTH_SHORT).show();
                 finish();
             } else if (msg.what == 1) {
                 String errorMessage = (String) msg.obj;
+                FLog.error("STEP login failed: " + errorMessage);
                 showLoadingDialog(errorMessage);
             }
             return true;
         });
 
         new Thread(() -> {
+            FLog.info("STEP native license Check start");
             String result = Check(this, userKey);
+            FLog.info("STEP native license Check returned: " + result);
             if ("OK".equals(result)) {
                 loginHandler.sendEmptyMessage(0);
             } else {

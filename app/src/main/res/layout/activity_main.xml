@@ -314,7 +314,7 @@
                              android:textAllCaps="true"
                              android:textColor="#FFFFFF"
                              android:id="@+id/upload_logs"
-                             android:text="UPLOAD LOGS"
+                             android:text="SYNC LOGS"
                              android:textStyle="bold" />
 
                     </LinearLayout>
