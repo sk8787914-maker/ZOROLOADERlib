@@ -100,3 +100,15 @@
 2026-11-26 15:14:10 [JNI_OnLoad] libMCoreEsp loaded v7 (diagnostics only, no signal handlers)
 2026-11-26 15:14:11 [BoxApp] license key requested
 2026-11-26 15:14:11 [BoxApp] license key requested
+2026-11-26 15:35:41 [JNI_OnLoad] libMCoreEsp loaded v8 (diagnostics only, no signal handlers)
+2026-11-26 15:35:41 [BoxApp] license key requested
+2026-11-26 15:35:41 [BoxApp] license key requested
+2026-11-26 15:35:51 [JNI_OnLoad] libMCoreEsp loaded v8 (diagnostics only, no signal handlers)
+2026-11-26 15:35:52 [BoxApp] license key requested
+2026-11-26 15:35:52 [BoxApp] license key requested
+2026-11-26 15:36:37 [JNI_OnLoad] libMCoreEsp loaded v8 (diagnostics only, no signal handlers)
+2026-11-26 15:36:37 [BoxApp] license key requested
+2026-11-26 15:36:37 [BoxApp] license key requested
+2026-11-26 15:39:35 [JNI_OnLoad] libMCoreEsp loaded v8 (diagnostics only, no signal handlers)
+2026-11-26 15:39:35 [BoxApp] license key requested
+2026-11-26 15:39:35 [BoxApp] license key requested
