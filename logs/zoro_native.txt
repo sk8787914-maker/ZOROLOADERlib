@@ -699,3 +699,12 @@
 2026-11-27 06:55:01 [JNI_OnLoad] libMCoreEsp loaded v19 (com.google, twitter cancel callback fix)
 2026-11-27 06:55:01 [BoxApp] license key requested
 2026-11-27 06:55:01 [BoxApp] license key requested
+2026-11-27 06:56:03 [JNI_OnLoad] libMCoreEsp loaded v19 (com.google, twitter cancel callback fix)
+2026-11-27 06:56:03 [BoxApp] license key requested
+2026-11-27 06:56:03 [BoxApp] license key requested
+2026-11-27 07:22:04 [JNI_OnLoad] libMCoreEsp loaded v20 (com.google, owner-aware pending cleanup)
+2026-11-27 07:22:04 [BoxApp] license key requested
+2026-11-27 07:22:04 [BoxApp] license key requested
+2026-11-27 07:22:19 [JNI_OnLoad] libMCoreEsp loaded v20 (com.google, owner-aware pending cleanup)
+2026-11-27 07:22:20 [BoxApp] license key requested
+2026-11-27 07:22:20 [BoxApp] license key requested
