@@ -2967,3 +2967,25 @@
 2026-11-27 07:24:32.078 [I/FLog] login_web process: BlackBox hooks skipped
 2026-11-27 07:24:32.082 [I/FLog] login_web process ready without BlackBox hooks
 2026-11-27 07:24:46.151 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
+2026-11-27 07:24:49.803 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-27 07:24:53.182 [I/FLog] Login log sync: true - Uploaded logs/zoro_login.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-27 07:24:56.721 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-27 07:25:01.113 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-27 07:25:03.965 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-27 07:25:07.799 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-27 07:25:11.263 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-27 07:25:42.948 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-27 07:25:42.953 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-27 07:25:42.956 [I/FLog] STEP attachBaseContext start
+2026-11-27 07:25:42.983 [I/FLog] STEP attachBaseContext done
+2026-11-27 07:25:43.052 [I/FLog] Loader started
+2026-11-27 07:25:43.067 [I/FLog] STEP license native check start
+2026-11-27 07:25:43.071 [I/FLog] STEP license native check done
+2026-11-27 07:25:43.075 [I/FLog] STEP SDK activation done
+2026-11-27 07:25:43.089 [I/FLog] STEP LoginActivity native lib loaded
+2026-11-27 07:25:45.073 [I/FLog] STEP sign-in button pressed
+2026-11-27 07:25:45.099 [I/FLog] STEP native license Check start
+2026-11-27 07:25:46.077 [I/FLog] STEP native license Check returned: OK
+2026-11-27 07:25:46.107 [I/FLog] STEP login success, opening MainActivity
+2026-11-27 07:25:46.176 [I/FLog] MainActivity ready
+2026-11-27 07:25:46.180 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
