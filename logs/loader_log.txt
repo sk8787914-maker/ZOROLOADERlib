@@ -2699,3 +2699,26 @@
 2026-11-27 06:51:04.782 [I/FLog] No device credential found - showing one-time setup
 2026-11-27 06:51:18.266 [I/FLog] Device credential saved
 2026-11-27 06:51:18.271 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
+2026-11-27 06:51:19.542 [I/FLog] STEP start button pressed
+2026-11-27 06:51:19.547 [I/FLog] STEP install game in container start
+2026-11-27 06:51:19.698 [I/FLog] STEP install game success
+2026-11-27 06:51:19.700 [I/FLog] STEP OBB copy start
+2026-11-27 06:51:19.707 [I/FLog] STEP OBB copy result: true
+2026-11-27 06:51:19.710 [I/FLog] STEP launching game process
+2026-11-27 06:51:20.233 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-27 06:51:20.241 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-27 06:51:20.253 [I/FLog] STEP attachBaseContext start
+2026-11-27 06:51:20.551 [I/FLog] STEP attachBaseContext done
+2026-11-27 06:51:21.643 [I/FLog] APK log sync: true - Uploaded logs/loader_log.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-27 06:51:25.665 [I/FLog] Login log sync: true - Uploaded logs/zoro_login.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-27 06:51:30.011 [I/FLog] Crash log sync: true - Uploaded logs/zoro_crash.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-27 06:51:34.965 [I/FLog] AAR log sync: true - Uploaded logs/zoro.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-27 06:51:36.978 [I/FLog] Native log sync: true - Uploaded logs/zoro_native.txt to sk8787914-maker/ZOROLOADERlib
+2026-11-27 06:51:40.989 [I/FLog] Tombstone log sync: true - Uploaded logs/zoro_tombstone.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-27 06:51:44.352 [I/FLog] Detect log sync: true - Uploaded logs/zoro_detect.txt to sk8787914-maker/BLACK-OPEN-fix-to-ai
+2026-11-27 06:52:06.621 [I/FLog] STEP native lib MCoreEsp loaded
+2026-11-27 06:52:06.624 [I/FLog] CrashGuard installed (previous=KillApplicationHandler)
+2026-11-27 06:52:06.627 [I/FLog] STEP attachBaseContext start
+2026-11-27 06:52:06.631 [I/FLog] login_web process: BlackBox hooks skipped
+2026-11-27 06:52:06.634 [I/FLog] login_web process ready without BlackBox hooks
+2026-11-27 06:52:18.277 [I/FLog] Auto-syncing APK, native, AAR, login, crash, detection and tombstone logs to GitHub
