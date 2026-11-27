@@ -36,20 +36,20 @@ static void ZoroNativeLog(const char *step, const char *msg) {
 }
 
 /**
- * v20: the old SIGSTOP/SIGCONT guard is still removed. The virtual process can
+ * v21: the old SIGSTOP/SIGCONT guard is still removed. The virtual process can
  * hit an ART MarkCompact abort while the isolated WebView owns the screen, so
  * the web result is stored in the loader's shared internal files directory.
- * The stored result now records its owner PID: when that process is gone the
- * stale result is discarded immediately instead of blocking the next Twitter
- * or Facebook login. Twitter cancellations call o5.a.k(boolean,int,int,Intent)
- * with the real request code; Facebook replays into the recreated IMSDK
- * WebLoginActivity listener. Game relaunch is rate-limited to avoid a restore
- * storm after a native/ART crash. No process signals and no VM/anti-cheat
- * changes are used here.
+ * Results record their owner PID. When that process is gone the result is no
+ * longer lost: the next login attempt in a fresh virtual process replays the
+ * stored result before opening another WebView, which would hit the same GC
+ * abort. Twitter cancellations call o5.a.k(boolean,int,int,Intent) with the real
+ * request code; Facebook replays into the recreated IMSDK WebLoginActivity
+ * listener. Game relaunch is rate-limited to avoid a restore storm. No process
+ * signals and no VM/anti-cheat changes are used here.
  */
 
 extern "C" JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
-    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded v20 (com.google, owner-aware pending cleanup)");
+    ZoroNativeLog("JNI_OnLoad", "libMCoreEsp loaded v21 (com.google, orphan result replay)");
     return JNI_VERSION_1_6;
 }
 
